@@ -6,9 +6,11 @@ categories: ios
 ---
 
 ios safari 에서 -webkit-overflow-scrolling:touch와 position:fixed를 같이 사용할 경우 스크롤 버그가 있다.
+
 재현 방법 
 - 아래 코드 상태에서 스크롤을 최상단에 두고 터치후 아래로 드래그
 - 아래 코드 상태에서 스크롤을 최하단에 두고 터치후 위로 드래그
+
 위와 같이 수행 할 경우 스크롤이 2~3초 안됨(가속 효과가 끝날때 까지)
 
 {% highlight html %}
