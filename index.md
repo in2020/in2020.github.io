@@ -1,23 +1,6 @@
-## Welcome to Alien.Hong Pages
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-I'm Web developer.
-
-### Interesting
-```markdown
-- php
-- laravel
-- javascript
-- webpack
-- typescript
-- vuejs
-- react
-- android
-- swift
-- apache
-- oop
-- mysql
-- spring
-- pwa
-- spa
-- nodejs
-```
+layout: home
+---
