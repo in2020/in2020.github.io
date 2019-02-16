@@ -6,10 +6,13 @@ categories: apache
 ---
 
 서버 스크립트 PHP를 사용하는 환경에서,
+
 아파치 MPM 이벤트 모드를 사용고자 하였다. 
+
 왜? 스레드를 활용한 자원의 효율적인 사용으로 쾌적한 서버 상태에 유리하다. 
 
 - MPM 선택(https://httpd.apache.org/docs/2.4/ko/misc/perf-tuning.html)
+
 ```
 아파치 2.x는 다중처리모듈 (MPMs)이라는 교체할 수 있는 동기화 모델을 지원한다. 아파치를 컴파일할때 MPM을 선택해야 한다. beos, mpm_netware, mpmt_os2, mpm_winnt와 같이 특정 플래폼에서만 사용할 수 있는 MPM도 있다. 일반적인 유닉스류 시스템은 여러 MPM 중에 하나를 선택할 수 있다. 웹서버의 속도와 확장성(scalability)은 어떤 MPM을 선택했냐에 달렸다:
 
@@ -33,6 +36,7 @@ PHP와 아파치 MPM 이벤트 모드를 사용하기 위해서는
       - LoadModule proxy_module modules/mod_proxy.so
       - LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so
       - www.conf 참고하여 설정 추가
+      
 ```
 <FilesMatch "\.php$">
 
