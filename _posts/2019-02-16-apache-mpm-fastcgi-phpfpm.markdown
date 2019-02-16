@@ -23,22 +23,19 @@ prefork MPM은 쓰레드가 한개인 자식 프로세스를 여러개 사용한
 ```
 
 PHP와 아파치 MPM 이벤트 모드를 사용하기 위해서는 
-  1. MPM 이벤트 모드 옵션을 주고 아파치 컴파일.
-  
-    - configure --with-mpm=event(https://httpd.apache.org/docs/2.4/mod/event.html)
-  2. 이벤트 모드에서는 mod_php(nts)를 사용할 수 없기 때문에 PHP-FPM을 사용한다.
-  
-    - apt-get install php-fpm
-  3. 아파치에서 PHP-FPM을 사용하기 위해서는 아파치 FastCGI 모듈(mod_proxy_fcgi.so)을 사용해야 한다.
- 
-    - /etc/php/[VERSION]/fpm/pool.d/www.conf
-      - UNIX SOCKET 또는 TCP SOCKET 선택하여 설정
-        - listen = /run/php/php7.2-fpm.sock(권한 설정 확인 필요)
-        - listen = 127.0.0.1:9000
-    - httpd.conf
-      - LoadModule proxy_module modules/mod_proxy.so
-      - LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so
-      - www.conf 참고하여 설정 추가
+- MPM 이벤트 모드 옵션을 주고 아파치 컴파일.
+  - configure --with-mpm=event(https://httpd.apache.org/docs/2.4/mod/event.html)
+- 이벤트 모드에서는 mod_php(nts)를 사용할 수 없기 때문에 PHP-FPM을 사용한다.  
+  - apt-get install php-fpm
+- 아파치에서 PHP-FPM을 사용하기 위해서는 아파치 FastCGI 모듈(mod_proxy_fcgi.so)을 사용해야 한다.
+  - /etc/php/[VERSION]/fpm/pool.d/www.conf
+    - UNIX SOCKET 또는 TCP SOCKET 선택하여 설정
+      - listen = /run/php/php7.2-fpm.sock(권한 설정 확인 필요)       
+      - listen = 127.0.0.1:9000
+  - httpd.conf
+    - LoadModule proxy_module modules/mod_proxy.so
+    - LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so
+    - www.conf 참고하여 설정 추가
       
 ```
 <FilesMatch "\.php$">
