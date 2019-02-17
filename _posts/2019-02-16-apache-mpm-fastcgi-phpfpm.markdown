@@ -66,3 +66,9 @@ PHP와 아파치 MPM 이벤트 모드를 사용하기 위해서는
 
 </FilesMatch>
 ```      
+
+apache ab test를 unix socket과 tcp socket에 대해서 진행 해 보았다.
+unix socket이 빠르게 나왔는데 무슨 이유인지 둘다 fail이 많이 1000개중 100개 정도 나타났다. 
+```
+ab -c 30 -n 1000 localhost/info.php
+```
