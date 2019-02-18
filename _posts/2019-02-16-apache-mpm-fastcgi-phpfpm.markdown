@@ -56,7 +56,7 @@ PHP와 아파치 MPM 이벤트 모드를 사용하기 위해서는
 
         # Use the standard TCP socket
 
-        #SetHandler "proxy:fcgi://localhost/:9000"
+        #SetHandler "proxy:fcgi://127.0.0.1:9000"
 
         # If your version of httpd is 2.4.9 or newer (or has the back-ported feature), you can use the unix domain socket
 
