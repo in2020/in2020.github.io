@@ -35,10 +35,14 @@ var app = new Vue({
 디렉티브는 Vue에서 제공하는 특수 속성임을 나타내는 v- 접두어가 붙어있으며 사용자가 짐작할 수 있듯 렌더링 된 DOM에 특수한 반응형 동작을 합니다.
 
 - v-bind
+Element 속성 설정
 ~~~ html
 <div id="app-2">
   <span v-bind:title="message">
     내 위에 잠시 마우스를 올리면 동적으로 바인딩 된 title을 볼 수 있습니다!
+  </span>
+  <span :title="message">
+    v-bind 생략 가능
   </span>
 </div>
 ~~~
@@ -93,6 +97,7 @@ var app4 = new Vue({
 ~~~
 
 - v-on
+이벤트 리스너 설정
 ~~~ html
 <div id="app-5">
   <p>{{ message }}</p>
@@ -115,6 +120,7 @@ var app5 = new Vue({
 ~~~
 
 - v-model
+양방향 바인딩
 ~~~ html
 <div id="app-6">
   <p>{{ message }}</p>
