@@ -9,7 +9,7 @@ categories: vue
 
 # 객체 
 
-객체를 v-for를 이용해 출력 가능하며 key와 index도 사용 가능 하나
+객체를 v-for를 이용해 출력 가능하며 key와 index도 사용 가능 하다
 
 ~~~ javascript
 

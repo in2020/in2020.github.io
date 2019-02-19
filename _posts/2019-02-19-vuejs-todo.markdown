@@ -7,9 +7,13 @@ categories: vue
 
 [참고 페이지 kr.vuejs.org v-for 와 컴포넌트](https://kr.vuejs.org/v2/guide/list.html#v-for-%EC%99%80-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8)
 
+~~~
+
 is="todo-item" 속성을 보면 <li> 엘리먼트는 <ul> 안에서만 유효합니다. 
 
 <todo-item>과 같은 일을 하지만 잠재적인 브라우저의 구문 분석 오류를 해결 합니다.
+
+~~~
 
 ~~~ html
 
