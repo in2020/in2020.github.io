@@ -34,6 +34,25 @@ vm.$watch('a', function (newVal, oldVal) {
 
 ~~~
 
+-  Vue는 속성 추가 및 삭제를 감지하지 못합니다. 그러나 Vue.set(object, key, value) 메소드를 사용하여 반응형 속성을 추가할 수 있습니다.
+
+~~~ javascript
+
+var vm = new Vue({
+  data: {
+    userProfile: {
+      name: 'Anika'
+    }
+  }
+})
+
+Vue.set(vm.userProfile, 'age', 27)
+
+~~~
+
+
+
 - 라이프사이클
 
 ![라이프사이클](https://kr.vuejs.org/images/lifecycle.png)
+

@@ -126,6 +126,7 @@ var app4 = new Vue({
 <div id="app-5">
   <p>{{ message }}</p>
   <button v-on:click="reverseMessage">메시지 뒤집기</button>
+  <button @:click="reverseMessage">약어사용 가능</button>
 </div>
 
 ~~~
