@@ -11,7 +11,7 @@ categories: vue
 
 - Fallback Content
 
-<submit-button> 컴포넌트 template이 아래와 같다고 할때
+submit-button 컴포넌트 template이 아래와 같다고 할때
 
 ~~~ html
 
@@ -45,7 +45,7 @@ categories: vue
 
 - Named Slots
 
-아래 <base-layout> 처럼 여러 slot이 필요할 경우 slot 이름을 설정하여 사용 가능 하다.
+아래 base-layout 처럼 여러 slot이 필요할 경우 slot 이름을 설정하여 사용 가능 하다.
 
 ~~~ html
 
@@ -114,5 +114,26 @@ v-slot을 #으로 표현 가능
     <p>Here's some contact info</p>
   </template>
 </base-layout>
+
+~~~
+
+- vm.$slot
+
+컴포넌트 render 함수 작성시 유용하게 사용.
+
+~~~ javascript
+
+Vue.component('blog-post', {
+  render: function (createElement) {
+    var header = this.$slots.header
+    var body   = this.$slots.default
+    var footer = this.$slots.footer
+    return createElement('div', [
+      createElement('header', header),
+      createElement('main', body),
+      createElement('footer', footer)
+    ])
+  }
+})
 
 ~~~
