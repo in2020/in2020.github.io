@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "Vue.js - v-if"
+date:   2019-02-21 13:00:00 +0900
+categories: vue
+---
+
+[kr.vuejs.org 조건부 렌더링 key를 이용한 재사용 가능한 엘리먼트 제어](https://kr.vuejs.org/v2/guide/conditional.html#key%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9E%AC%EC%82%AC%EC%9A%A9-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%A0%9C%EC%96%B4)
+
+Vue는 가능한 한 효율적으로 엘리먼트를 렌더링하려고 시도하며 종종 처음부터 렌더링을 하지않고 다시 사용합니다. 
+
+Vue를 매우 빠르게 만드는데 도움이 되는 것 이외에 몇가지 유용한 이점이 있습니다. 
+
+~~~ html 
+ 
+<template v-if="loginType === 'username'">
+  <label>사용자 이름</label>
+  <input placeholder="사용자 이름을 입력하세요">
+</template>
+<template v-else>
+  <label>이메일</label>
+  <input placeholder="이메일 주소를 입력하세요">
+</template>
+ 
+~~~
+
+이것은 항상 바람직하지는 않습니다. 
+
+때문에 “이 두 엘리먼트는 완전히 별개이므로 다시 사용하지 마십시오.”
+
+라고 알리는 방법을 제공합니다. 유일한 값으로 key 속성을 추가하십시오.
+
+~~~ html 
+ 
+<template v-if="loginType === 'username'">
+  <label>사용자 이름</label>
+  <input placeholder="사용자 이름을 입력하세요" key="username-input">
+</template>
+<template v-else>
+  <label>이메일</label>
+  <input placeholder="이메일 주소를 입력하세요" key="email-input">
+</template>
+ 
+~~~
+
+# v-show
+
+엘리먼트를 조건부로 표시하기 위한 또 다른 옵션은 v-show 디렉티브입니다. 
+
+사용법은 v-if와 거의 동일합니다.
+
+일반적으로 v-if는 토글 비용이 높고 v-show는 초기 렌더링 비용이 더 높습니다. 
+
+매우 자주 바꾸기를 원한다면 v-show를, 런타임 시 조건이 바뀌지 않으면 v-if를 권장합니다.
