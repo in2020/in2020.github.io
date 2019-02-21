@@ -16,7 +16,7 @@
 title: 홍이 기술 블로그
 email: in20200212@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  홍이 기술 블로그
+  개발과 관련된 공부 내용이나 이슈 사항을 기록하고 있습니다.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://in2020.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
