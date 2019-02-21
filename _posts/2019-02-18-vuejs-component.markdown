@@ -176,3 +176,50 @@ Vue.js에서 부모-자식 컴포넌트 관계는 props는 아래로, events 위
 부모는 props를 통해 자식에게 데이터를 전달하고 자식은 events를 통해 부모에게 메시지를 보냅니다
 
 ![부모-자식 컴포넌트 관계](https://kr.vuejs.org/images/props-events.png)
+
+# v-on을 이용한 사용자 지정 이벤트($emit)
+
+자식 컨포넌트가 부모에게 이벤트를 전송하는 방법
+
+태그에 선언된 increment를 기준으로 부모 method를 바인딩하고 자식에서는 $emit('increment')를 통해 호출.
+
+~~~ html
+
+<div id="counter-event-example">
+  <p>{{ total }}</p>
+  <button-counter v-on:increment="incrementTotal"></button-counter>
+  <button-counter v-on:increment="incrementTotal"></button-counter>
+</div>
+
+~~~
+
+~~~ javascript
+
+Vue.component('button-counter', {
+  template: '<button v-on:click="incrementCounter">{{ counter }}</button>',
+  data: function () {
+    return {
+      counter: 0
+    }
+  },
+  methods: {
+    incrementCounter: function () {
+      this.counter += 1
+      this.$emit('increment')
+    }
+  },
+})
+
+new Vue({
+  el: '#counter-event-example',
+  data: {
+    total: 0
+  },
+  methods: {
+    incrementTotal: function () {
+      this.total += 1
+    }
+  }
+})
+
+~~~
