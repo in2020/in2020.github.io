@@ -5,7 +5,21 @@ date:   2019-02-18 09:00:00 +0900
 categories: vue
 ---
 
-[참고](https://kr.vuejs.org/v2/guide/)
+#참고
+
+[kr.vuejs.org](https://kr.vuejs.org/v2/guide/)
+
+[Vue.js 살펴보기 김정환 블로그](http://blog.jeonghwan.net/vue/2017/03/27/vue.html)
+
+# MVVM
+
+MVVM 모델의 VM을 Vue가 담당.
+
+뷰모델에 자바스크립트 객체와 돔을 연결해 주면 뷰모델은 이 둘간의 동기화를 자동으로 처리한다. 
+
+이것이 Vue 역할.
+
+![MVVM](https://012.vuejs.org/images/mvvm.png)
 
 # 호환성 정보
 Vue는 ECMAScript 5 기능을 사용하기 때문에 IE8 이하 버전을 지원하지 않습니다. 하지만 모든 ECMAScript 5 호환 브라우저를 지원합니다
