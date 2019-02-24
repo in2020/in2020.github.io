@@ -3,8 +3,6 @@ title: About
 permalink: /about/
 ---
 
-# About
-
 이름 : 김인홍  
 생년월일 : 1987.02.12  
 이메일 : in20200212@gmail.com
