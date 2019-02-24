@@ -35,16 +35,17 @@ LG전자 R&D 센터 6개월 안드로이드 개발 인턴
 팬택 스마트폰 제조 관리시스템(PLM) 운영  
 > Unix, Oracle, Apache, Tomcat, JSP, IPlanet, Javascript, PTC Windchill, BPM  
 
-- 운영 업무 대응 및 신규 기능 개발
+- 운영 업무 대응
 - 일정 관리 캘린더 개발
 - 시료관리 시스템 개발
 
 ### 2015 ~ 현재
 
 민다 입사  
+Backend, Front Script 개발
 > Linux, MariaDB, Apache, Php-fpm, PHP, Codeigniter, Laravel, Javascript, Jquery, Vue
 
-- 운영 업무 대응 및 신규 기능 개발
+- 운영 업무 대응
 - 전체 사이트 리뉴얼
 - 숙소 파트너 예약 캘린더 개발
 - 결제 수단 추가(KCP, Kakaopay, Payple)
@@ -55,3 +56,4 @@ LG전자 R&D 센터 6개월 안드로이드 개발 인턴
 - 트립 서비스 추가
 - AWS 서버 이전
 - Agoda 연동
+- 모바일 메인 Vue 적용
