@@ -56,4 +56,4 @@ Backend, Front Script 개발
 - 트립 서비스 추가
 - AWS 서버 이전
 - Agoda 연동
-- 모바일 메인 Vue 적용
+- 모바일 메인 Vue 적용(진행중)
