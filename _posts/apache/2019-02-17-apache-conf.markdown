@@ -2,6 +2,7 @@
 layout: post
 title:  "아파치 설정 httpd.conf"
 date:   2019-02-17 09:00:00 +0900
+tags: [apache]
 categories: apache
 ---
 

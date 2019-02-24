@@ -2,7 +2,7 @@
 layout: post
 title:  "iOS safari momentum scrolling bug"
 date:   2019-02-13 22:28:21 +0900
-tags: [vue]
+tags: [ios]
 categories: ios
 ---
 

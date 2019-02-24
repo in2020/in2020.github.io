@@ -2,6 +2,7 @@
 layout: post
 title:  "아파치 MPM EVENT MODE, FastCGI와 PHP-FPM 관계"
 date:   2019-02-16 00:00:00 +0900
+tags: [apache]
 categories: apache
 ---
 
