@@ -3,129 +3,57 @@ title: About
 permalink: /about/
 ---
 
-You can see live demo [here](https://aweekj.github.io/Kiko-plus). This theme is inspired by [Kiko](http://github.com/gfjaru/Kiko) theme.
+# About
 
-## Features
+이름 : 김인홍  
+생년월일 : 1987.02.12  
+이메일 : in20200212@gmail.com
 
-- Disqus comment system
-- Google analytics
-- Pagination support
-- Custom tags
-- SEO support
+---------
 
+## History
 
-## Installation
+### 2005
 
-#### Method 1: new master's repository (The Best)
+중앙대학교 컴퓨터공학과 입학
 
-1. First [fork](https://github.com/AWEEKJ/Kiko-plus/fork) it.
-2. Change your forked repository name _Kiko-plus_ to __USERNAME.github.io__ where __USERNAME__ is your github username.
-3. Access your new blog via [https://username.github.io](https://username.github.io).
-4. [See configuration](#configuration).
+### 2010 
 
-#### Method 2: gh-pages in existing repository
+안드로이드, 웹 Java 개발자 6개월 학원 교육 이수   
+LG전자 R&D 센터 6개월 안드로이드 개발 인턴
 
-1. Create a new branch called _gh-pages_ in the repository where you want to add a template [managing branches](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/).
-2. From command line run `git clone https://github.com/AWEEKJ/Kiko-plus.git` - this will clone _Kiko-plus_ template to your computer.
-3. Create new branch `git checkout -b gh-pages` where _gh-pages_ will be your branch name.
-4. Add remote, which is your repo from the first step, to your new branch `git remote add gh-pages https://github.com/<yourName>/<yourMaster>/gh-pages`. _yourName_ is your account name and _yourMaster_ is your repository.
-5. Push new branch to remote `git push gh-pages`.
-6. Update `_config.yml` file by changing `baseurl: "<branchName>"` _branchName_ is your branch name where _gh-pages_ resides. See [configuration](#configuration).
+### 2012
 
-#### Method 3: Run it locally
+중앙대학교 컴퓨터공학과 졸업  
+팬택C&I 입사  
+안드로이드 개발  
+- 셋톱박스 파일 관리자 App 개발
+- CTS 테스트 
+- 안드로이드 업그레이드 4.4 > 5.0 
 
-1. Download [zip](https://github.com/AWEEKJ/Kiko-plus/archive/master.zip) or clone it `git clone https://github.com/AWEEKJ/Kiko-plus`.
-2. Go inside folder and run `jekyll serve` or `rake preview`. This will build a website which you can access [https://localhost:4000](https://localhost:4000). You need to have [Jekyll](https://jekyllrb.com/docs/installation/) installed to do this.
+### 2013 ~ 2015
 
+팬택C&I IT운영팀 부서 이동  
+팬택 스마트폰 제조 관리시스템(PLM) 운영  
+> Unix, Oracle, Apache, Tomcat, JSP, IPlanet, Javascript, PTC Windchill, BPM  
 
-## Configuration
+- 운영 업무 대응 및 신규 기능 개발
+- 일정 관리 캘린더 개발
+- 시료관리 시스템 개발
 
-All configuration is done via `_config.yml` file which you will find in your main repo folder. Change this `<something>` to yours.
+### 2015 ~ 현재
 
-### Basic
+민다 입사  
+> Linux, MariaDB, Apache, Php-fpm, PHP, Codeigniter, Laravel, Javascript, Jquery, Vue
 
-- Config your blog name.
-
-```yml
-name: <blog-name>
-```
-
-- These configuration in `author:` is for links to icons in footer. If you want to add more link icons, modify `_includes/footer.html` file.
-
-```yml
-author:
-  facebook:         your-id
-  twitter:          your-id
-  github:           your-id
-  linkedin:         your-id
-  medium:           your-id
-  tumblr:           your-id
-  email:            your-id@your-email.com
-```
-
-- Change copyright year and name in footer.
-
-```yml
-copyright:
-  year:             2017
-  name:             Kiko
-```
-
-### Google analytics
-
-- Change this to your Google Analytic ID.
-
-```yml
-google-analytics:
-  id:               "your-id"
-```
-
-### Disqus
-
-- Change this to your Disqus short name.
-
-```yml
-disqus:
-  id:               "your-id"
-```
-
-### URL
-
-- Config your domain.
-
-```yml
-url: "https://<your-name>.github.io"
-```
-
-- **NOTE** When if running locally, change url to 
-
-```yml
-url: "https://localhost:4000"
-```
-
-- Change this to your branch name where _gh-pages_ resides. 
-- **NOTE** apply only if you used __Method 2__ for installation.
-
-```yml
-baseurl: "/<branch-name>"
-```
-
-## Rakefile Usage
-
-```bash
-# Create new post
-$ rake post title="A Title" [date="2015-08-16"] [tags="[tag1, tag2]"] 
-
-# Create new draft post
-$ rake draft title="A Title" [date="2015-08-16"] [tags="[tag1, tag2]"]
-
-# Install Jekyll Plugins. Do before running in local.
-$ rake geminstall
-
-# Run in Local
-$ rake preview
-```
-
-## License
-
-This theme is released under MIT License.
+- 운영 업무 대응 및 신규 기능 개발
+- 전체 사이트 리뉴얼
+- 숙소 파트너 예약 캘린더 개발
+- 결제 수단 추가(KCP, Kakaopay, Payple)
+- 웹 앱 Firebase cloude Message 연동
+- 여행 정보(장소, 일정) 서비스 추가
+- 파트너 웹 앱(Android, iOS) 런칭
+- 국내 숙소 웹 앱 (Android, iOS) 런칭
+- 트립 서비스 추가
+- AWS 서버 이전
+- Agoda 연동
