@@ -2,6 +2,7 @@
 layout: post
 title:  "Vue.js - 할일 목록 연습"
 date:   2019-02-19 11:00:00 +0900
+tags: [vue]
 categories: vue
 ---
 

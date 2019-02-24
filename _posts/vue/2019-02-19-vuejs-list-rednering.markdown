@@ -2,6 +2,7 @@
 layout: post
 title:  "Vue.js - 리스트 렌더링"
 date:   2019-02-19 9:00:00 +0900
+tags: [vue]
 categories: vue
 ---
 

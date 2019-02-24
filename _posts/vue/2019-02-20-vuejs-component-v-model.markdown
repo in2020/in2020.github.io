@@ -2,6 +2,7 @@
 layout: post
 title:  "Vue.js - v-model"
 date:   2019-02-20 09:00:00 +0900
+tags: [vue]
 categories: vue
 ---
 

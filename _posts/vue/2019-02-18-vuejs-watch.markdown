@@ -2,6 +2,7 @@
 layout: post
 title:  "Vue.js - watch"
 date:   2019-02-18 13:00:00 +0900
+tags: [vue]
 categories: vue
 ---
 

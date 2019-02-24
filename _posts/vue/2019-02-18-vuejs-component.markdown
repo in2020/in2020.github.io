@@ -2,6 +2,7 @@
 layout: post
 title:  "Vue.js - 컴포넌트"
 date:   2019-02-18 10:00:00 +0900
+tags: [vue]
 categories: vue
 ---
 

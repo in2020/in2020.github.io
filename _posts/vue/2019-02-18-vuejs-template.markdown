@@ -2,6 +2,7 @@
 layout: post
 title:  "Vue.js - 템플릿"
 date:   2019-02-18 12:00:00 +0900
+tags: [vue]
 categories: vue
 ---
 

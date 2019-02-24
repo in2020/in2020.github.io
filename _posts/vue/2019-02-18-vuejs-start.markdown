@@ -2,6 +2,7 @@
 layout: post
 title:  "Vue.js 시작"
 date:   2019-02-18 09:00:00 +0900
+tags: [vue]
 categories: vue
 ---
 

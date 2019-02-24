@@ -2,6 +2,7 @@
 layout: post
 title:  "Vue.js - 클래스와 스타일 바인딩"
 date:   2019-02-21 11:00:00 +0900
+tags: [vue]
 categories: vue
 ---
 

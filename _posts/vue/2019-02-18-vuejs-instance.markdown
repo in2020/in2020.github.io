@@ -2,6 +2,7 @@
 layout: post
 title:  "Vue.js - 인스턴스"
 date:   2019-02-18 11:00:00 +0900
+tags: [vue]
 categories: vue
 ---
 
