@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "Vue.js - vue-cli build --watch hot-update 파일 관리"
+date:   2019-02-26 15:00:00 +0900
+tags: [vue]
+categories: vue
+---
+
+[react-hot-loader Removal of *.hot-update.json files](https://github.com/gaearon/react-hot-loader/issues/456)
+
+vue-cli를 사용하여 개발환경을 설정하고 vue-cli build --watch를 통해 개발시 자동 빌드 설정을 하였다. 
+
+수정사항이 hot-update가 될때마다 해시 값을 가진 파일이 output 디렉토리에 생성되었다. 
+
+이를 수정 하기위해 hot-update 파일에 대한 폴더 설정을 하고 .gitignore에 추가 하였다.
+
+~~~ javascript
+package.json
+
+...
+"scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --no-clean --mode=production --target=app",
+    "watch": "vue-cli-service build --no-clean --mode=development --target=app --watch ",
+    "lint": "vue-cli-service lint"
+  },
+...
+
+vue.config.js
+
+module.exports = {
+      ...
+      configureWebpack: {
+        hotUpdateChunkFilename: 'hot-update/hot-update.js',
+        hotUpdateMainFilename: 'hot-update/hot-update.json'
+      }
+
+      ...
+    }
+
+~~~
