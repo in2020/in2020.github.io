@@ -8,6 +8,8 @@ categories: vue
 
 [vuejs.org Dynamic & Async Components](https://vuejs.org/v2/guide/components-dynamic-async.html#keep-alive-with-Dynamic-Components)
 
+[Passing props dynamically to dynamic component in VueJS](https://stackoverflow.com/questions/43658481/passing-props-dynamically-to-dynamic-component-in-vuejs)
+
 컴포넌트 변경 방법
 
 ~~~ html 
@@ -79,5 +81,30 @@ currentTabComponent 변수는 component의 옵션 객체만 설정하여 넘겨 
 <keep-alive>
   <component v-bind:is="currentTabComponent"></component>
 </keep-alive>
+
+~~~
+
+컴포넌트 동적 변경시 데이터 전달 방법
+
+~~~ html
+
+<component :is="currentComponent" v-bind="currentProperties"></component>
+
+~~~
+
+~~~ javascript
+
+data: function () {
+  return {
+    currentComponent: 'myComponent',
+  }
+},
+computed: {
+  currentProperties: function() {
+    if (this.currentComponent === 'myComponent') {
+      return { foo: 'bar' }
+    }
+  }
+}
 
 ~~~
