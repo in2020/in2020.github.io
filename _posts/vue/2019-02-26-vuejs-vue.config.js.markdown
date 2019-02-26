@@ -31,8 +31,10 @@ vue.config.js
 module.exports = {
       ...
       configureWebpack: {
-        hotUpdateChunkFilename: 'hot-update/hot-update.js',
-        hotUpdateMainFilename: 'hot-update/hot-update.json'
+          output: {
+              hotUpdateChunkFilename: 'hot-update/hot-update.js',
+              hotUpdateMainFilename: 'hot-update/hot-update.json'
+          }
       }
 
       ...
