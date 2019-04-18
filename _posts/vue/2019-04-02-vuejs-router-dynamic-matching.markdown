@@ -2,8 +2,7 @@
 layout: post
 title:  "Vue.js - Router 동적 라우트 매칭"
 date:   2019-04-02 13:00:00 +0900
-tags: [vue]
-categories: vue
+tags: [vue, vue-router]
 ---
 
 [Vue Router 동적 라우트 매칭](https://router.vuejs.org/kr/guide/essentials/dynamic-matching.html)
