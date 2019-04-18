@@ -5,7 +5,7 @@ date:   2019-04-18 00:00:00 +0900
 tags: [vue, vue-router]
 ---
 
-[Vue Router - Lazy loading](https://router.vuejs.org/kr/guide/advanced/lazy-loading.html)
+참고 : [Vue Router - Lazy loading](https://router.vuejs.org/kr/guide/advanced/lazy-loading.html)
 
 코드가 늘면 js파일이 커져서 한번에 다운받기 부담스럽다.
 
