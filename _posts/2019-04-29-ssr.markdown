@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "Server-Side Rendering"
+date:   2019-04-29 00:00:00 +0900
+tags: [ssr]
+---
+
+참고: [왜 React와 서버 사이드 렌더링인가?](https://subicura.com/2016/06/20/server-side-rendering-with-react.html)
+참고: [Vue SSR](https://ssr.vuejs.org/#what-is-server-side-rendering-ssr)
+
+![Client, Server Side Rendering](https://subicura.com/assets/article_images/2016-06-20-server-side-rendering-with-react/client-side-vs-server-side.png)
+
+# 서버 사이드 렌더링이란?
+
+말그대로 HTML 결과물을 서버에서 렌더링하여 Client에 보낸다.
+
+# 왜 사용하는가?
+
+웹이 발전하면서 단일 페이지 앱(SPA) 형태가 나타나고 SPA 단점을 보안하고자 서버 사이드 렌더링(SSR)이 사용됨.
+
+SPA 어떤 단점을 보안 하는가?
+
+- 검색 엔진 최적화
+  - 구글의 경우 크롤러가 자바스크립트 엔진이 내장 되어 있지만 이외 사이트는 대부분 되어있지 않다고 함.
+- 유저가 처음으로 컨텐츠를 보는 속도가 빨라짐.
+  - 특히 인터넷이 느리거나 느린 Devices에서 효과가 높음.
+- 서버 데이터에 의존하여 실행되야하는 처리를 클라이언트에서 해결가능.
+
+# 언제 써야 하는가?
+
+당연하겠지만.. 단점을 감안하더라도 장점이 필요할때 쓰면 된다.
+
+장점은 위에 있고 단점은 아래와 같다.
+
+- 개발 제약사항: 외부 라이브러리 사용시 Hook활용 등이 필요할 수 있음.
+- SSR을 위한 빌드 설정이 필요함
+- 서버 CPU를 사용하게 됨.
+
+# Prerendering 
+
+검색 엔진 최적화만을 위해 SSR을 사용하고자 한다면 Prerendering이 대안이 될 수 있다.
