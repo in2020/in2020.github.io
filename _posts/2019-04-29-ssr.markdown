@@ -6,6 +6,7 @@ tags: [ssr]
 ---
 
 참고: [왜 React와 서버 사이드 렌더링인가?](https://subicura.com/2016/06/20/server-side-rendering-with-react.html)
+
 참고: [Vue SSR](https://ssr.vuejs.org/#what-is-server-side-rendering-ssr)
 
 ![Client, Server Side Rendering](https://subicura.com/assets/article_images/2016-06-20-server-side-rendering-with-react/client-side-vs-server-side.png)
