@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Vue.js - NUXT View"
-date:   2019-04-29 00:00:00 +0900
+date:   2019-04-29 02:00:00 +0900
 tags: [vue, nuxt]
 ---
 
