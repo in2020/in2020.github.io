@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "CSRF(Cross-site request forgery)"
+date:   2019-05-14 01:00:00 +0900
+tags: [security, csrf]
+---
+
+참고: [위키백과](https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%ED%8A%B8_%EA%B0%84_%EC%9A%94%EC%B2%AD_%EC%9C%84%EC%A1%B0)
+
+[Microsoft Docs ASP.NET Core에서 방지 교차 사이트 요청 위조 (XSRF/CSRF) 공격](https://docs.microsoft.com/ko-kr/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2)
+
+# CSRF?
+
+공격자가 요청을 위조해서 사용자에게 공격자가 의도한 행위를 하게 하는것.
+
+# 어떻게 발생되는가?
+
+로그인된 사용자에게 의도한 행위를 할 수 있는 url을 이메일 등으로 전달하여 실행되게한다.
+
+많이 사용되는 예
+
+<img src="https://도메인/이체?to=공격자&amount=10000">
+
+도메인에 로그인 되어있는 사용자가 위와 같은 태그가 담긴 이메일을 열면 모르는 사이 이체가 될수도 있다.
+
+# 사례
+
+2008년 옥션 사례 
+
+- 관리자 정보가 CSRF로 탈취되어 사용자 개인정보가 유출됨.
+
+# CSRF 방지 방법
+
+조사한 바로는 토큰을 활용한 방법이 있는데 토큰 저장 위치(세션, 쿠키)에 따라 방법이 나뉜다.
+쿠키는 외부 조작이 가능하여 세션을 활용하는 방법이 더 나을것 같다는 생각이 들었지만 
+어차피 토큰을 복사하면 뚫린다는 관점에서는 보안 이점은 도긴개긴..
+
+양방향 암호화로 의미있는 데이터를 넣고 검증하는 방법도 있다.
+이것도 보안 이점 관점에서는 도긴개긴..
+
+보안 로직을 구현할 때는 보안 이점에 포인트를 맞추어 로직이 산으로 가지 않도록 해야한다.
