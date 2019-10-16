@@ -46,6 +46,7 @@ Backend, Front Script 개발
 > Linux, MariaDB, Apache, Php-fpm, PHP, Codeigniter, Laravel, Javascript, Jquery, Vue
 
 - 운영 업무 대응
+- 소규모 추가 기능 다수
 - 전체 사이트 리뉴얼
 - 숙소 파트너 예약 캘린더 개발
 - 결제 수단 추가(KCP, Kakaopay, Payple)
@@ -58,3 +59,4 @@ Backend, Front Script 개발
 - Agoda 연동
 - 모바일 메인 Vue 적용
 - 숙소 목록 리팩토링
+- Deployer를 활용한 배포 시스템 개발(https://deployer.org/)
